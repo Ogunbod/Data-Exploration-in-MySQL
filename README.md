@@ -16,7 +16,8 @@ Write SQL queries to perform the following actions:
 
 
 ## Project
-``` create database Sales_Data_Management_System;
+```sql
+create database Sales_Data_Management_System;
 use Sales_Data_Management_System;
 create table Customers (
 Customer_ID int primary key not null,
@@ -158,4 +159,5 @@ WHERE MONTH(st.Transaction_Date) = 2024-03-09;
 SELECT AVG(st.Total_Amount) AS AverageTransactionAmount
 FROM Sales_Transaction st
 JOIN Customers c ON st.Customer_ID = c.Customer_ID
-WHERE c.Representative_ID = 3020; ```
+WHERE c.Representative_ID = 3020;
+```
